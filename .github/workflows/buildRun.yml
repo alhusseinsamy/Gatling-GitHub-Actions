@@ -33,7 +33,7 @@ jobs:
       # supported by your version of Gatling and by your build tool.
       # See https://github.com/actions/setup-java/blob/main/README.md for options.
       - name: Setup JDK
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: 'zulu'
           java-version: '17'
