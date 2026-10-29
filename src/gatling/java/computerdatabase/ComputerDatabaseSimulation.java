@@ -80,6 +80,6 @@ public class ComputerDatabaseSimulation extends Simulation {
         setUp(
             users.injectOpen(rampUsers(1000).during(10)),
             admins.injectOpen(rampUsers(1000).during(10))
-        ).protocols(httpProtocol);
+        ).protocols(httpProtocol).assertions(global().failedRequests().count().is(0L));
     }
 }
