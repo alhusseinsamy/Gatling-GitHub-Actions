@@ -83,3 +83,4 @@ public class ComputerDatabaseSimulation extends Simulation {
         ).protocols(httpProtocol).assertions(global().failedRequests().count().is(0L));
     }
 }
+
